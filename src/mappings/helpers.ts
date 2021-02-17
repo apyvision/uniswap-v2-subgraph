@@ -25,14 +25,6 @@ export function exponentToBigDecimal(decimals: BigInt): BigDecimal {
   return bd
 }
 
-export function bigDecimalExp18(): BigDecimal {
-  return BigDecimal.fromString('1000000000000000000')
-}
-
-export function convertEthToDecimal(eth: BigInt): BigDecimal {
-  return eth.toBigDecimal().div(exponentToBigDecimal(18))
-}
-
 export function convertTokenToDecimal(tokenAmount: BigInt, exchangeDecimals: BigInt): BigDecimal {
   if (exchangeDecimals == ZERO_BI) {
     return tokenAmount.toBigDecimal()

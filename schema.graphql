@@ -272,6 +272,7 @@ type PairDayData @entity {
   dailyVolumeToken0: BigDecimal!
   dailyVolumeToken1: BigDecimal!
   dailyVolumeUSD: BigDecimal!
+  dailyVolumeUntrackedUSD: BigDecimal!
   dailyTxns: BigInt!
 }
 

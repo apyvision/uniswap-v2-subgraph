@@ -47,6 +47,7 @@ export function updatePairDayData(event: EthereumEvent): PairDayData {
     pairDayData.dailyVolumeToken0 = ZERO_BD
     pairDayData.dailyVolumeToken1 = ZERO_BD
     pairDayData.dailyVolumeUSD = ZERO_BD
+    pairDayData.dailyVolumeUntrackedUSD = ZERO_BD
     pairDayData.dailyTxns = ZERO_BI
   }
 
